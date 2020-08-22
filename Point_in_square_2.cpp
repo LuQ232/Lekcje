@@ -10,14 +10,12 @@ private:
 public:
 	Punkt()
 	{
-
 	}
 	Punkt(int v1, int v2)
 	{
 		x = v1;
 		y = v2;
 	}
-
 	int get_x()
 	{
 		return x;
@@ -38,9 +36,7 @@ private:
 public:
 	Kwadrat()
 	{
-
 	}
-
 	Kwadrat(Punkt xx1, Punkt yy1, Punkt xx2, Punkt yy2)
 	{
 		lewa = std::min({ xx1.get_x(), xx2.get_x(),yy1.get_x(), yy2.get_x() });
@@ -100,7 +96,6 @@ int main()
 	Punkt g(x, y);
 
 	Kwadrat kw(a,b,c,d);
-
 
 	kw.sprawdz(g);
 	if (kw.sprawdz(g) == true)
